@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    
 	<div class="page1">
 		<div class="hs"><h2>HS: <span id="highScore1"></span></h2></div>
 		<a style="position: absolute;" onclick="homePage()" ><span class="material-symbols-outlined">home</span></a>
@@ -44,7 +44,8 @@
 					<div id="four4" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=4>4<img src="./media/four.png" alt="" id="fourImage"></div>
 					<div id="six6" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=6>6
 						<img src="./media/six.png" alt="" id="sixImage">
-					</div>
+					
+					</div><img src="./media/fifty.png" alt="" id="fiftyImage">
 				</div>
 			</div>
 
@@ -64,6 +65,8 @@
 			<button id="homeBtn" onclick="homePage()">Home</button>
 
 		</div>
+  <audio src="./media/applause.mp3" id="myAudio"></audio>
+  <audio src="./media/boo.mp3" id="myAudio1"></audio>
 
 
 		<script src="./Javscript/javascript.js"></script>

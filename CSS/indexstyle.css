@@ -290,7 +290,7 @@
 	width: 60vw;
 	bottom: -30vh;
 	right: 20vw;
-	opacity: 0.8;
+	opacity: 1;
 	visibility: hidden;
 }
 
@@ -301,7 +301,7 @@
 	width: 60vw;
 	bottom: -30vh;
 	right: 20vw;
-	opacity: 0.8;
+	opacity: 1;
 	visibility: hidden;
 }
 #outImage{
@@ -310,8 +310,18 @@
 	width: 0vh;
 	bottom: 30vh;
 	right: 0vw;
-	opacity: 0.8;
-	visibility: visible;
+	opacity: 1;
+	visibility: hidden;
+}
+
+#fiftyImage{
+	position: absolute;
+	align-items: center;
+	width: 60vw;
+	bottom: -30vh;
+	right: 20vw;
+	opacity: 1;
+	visibility: hidden;
 }
 
 
