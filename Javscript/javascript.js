@@ -50,7 +50,7 @@ function scoreCalc(userHit) {
 
 		score = score + x;
 		
-		if(score>=5 && a===0){
+		if(score>=50 && a===0){
 			playAudio();
 			document.getElementById("fiftyImage").style.visibility = "visible";
 			popup50();
