@@ -1,0 +1,315 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	color: aliceblue;
+}
+.page1{
+	width: 100%;
+	height: 100vh;
+	/* background-color: rgb(10, 10, 10); */
+	/* background-image: url(./media/bg4.jpg); */
+	/* background-position: 100%; */
+	z-index: 3;
+	visibility: visible;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+	
+}
+.hs{
+	position: absolute;
+	border: 2px solid white;
+	width: fit-content;
+	padding: 1vh;
+	border-radius: 2vh;
+	top: 4vh;
+	left: 6vw;
+}
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 5,
+	'wght' 400,
+	'GRAD' 10,
+	'opsz' 48;
+	position: fixed;
+	right: 10%;
+	top: 5%;
+	color: rgb(240, 248, 255);
+	font-size: 50vh;
+	
+  }
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	/* min-width: 100%;  */
+	min-height: 100vh;
+	/* width:100vw; */
+	z-index: -1;
+  }
+
+
+/* homepage */
+.page2{
+	width: 80vw;
+	height: 80vh;
+	background-color: rgba(36, 33, 33, 0.973);
+	/* background-image: url(./media/bg4.jpg); */
+	/* background-position: 100%; */
+	z-index: 6;
+	visibility: visible;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	margin: 10vh 10vw;
+	border-radius: 5vw 15vw;
+
+
+	
+}
+
+#imgbox{
+	width: 50vw;
+	height: 70vh;
+	
+	margin-top: 20vh;
+	margin-left: 20vw;
+	border-radius: 10vh;
+	
+	/* background-position: 100%; */
+	/* z-index: 6; */
+	visibility: visible;
+	position: relative;
+	text-align: center;
+	margin-right: 50vw;
+
+
+}
+#imgbox h1{
+	position: relative;
+	text-align: center;
+	font-size: 8vh;
+	right: 7vw;
+
+	/* margin-right: 50vw; */
+}
+
+#playBtn{
+	width: 40vw;
+	height: 8vh;
+	background-color: rgba(0, 0, 0, 0.747);
+	border-radius: 5vw;
+	position: relative;
+	top: 15vh;
+	right: 5vw;
+}
+.cont1{
+	width: 100%;
+	height: 8vh;
+	/* border: 1px solid red; */
+}
+.cont2{
+	width: 100%;
+	height: 31vh;
+	text-align: center;
+	/* border: 1px solid red; */
+}
+.cont3{
+	width: 75%;
+	height: 15vh;
+	/* border: 1px solid red; */
+	text-align: center;
+	align-self: center;
+}
+.cont4{
+	width: 100%;
+	height: 50vh;
+	/* border: 1px solid red; */
+}
+.page1 .box1{
+	width: 75vw;
+	height: 20vh;
+	border: 1px solid rgb(41, 87, 155);
+	margin-top: 10vh;
+	margin-left: 12vw;
+	/* align-items: center; */
+	display: flex;
+	flex-direction: column;
+}
+.box1_1{
+	width: 100% ;
+	height: 10vh;
+	/* border: 1px solid red; */
+}
+.box1_1 div{
+	
+	margin-top: 2vh;
+	width: 6vw;
+	height: 5vh;
+	border: 1px solid rgb(140, 0, 255);
+	margin-left: 8vw;
+	display: inline-block;
+	
+}
+
+.box1_2{
+	width: 100%;
+	height: 10vh;
+	/* border: 1px solid red; */
+}
+.box1_1 div{
+	
+	
+	margin-top: 2vh;
+	width: 14vw;
+	height: 5vh;
+	border: 1px solid rgb(140, 0, 255);
+	margin-left: 8vw;
+	display: inline-block;
+	background-color: rgb(255, 255, 0);
+	font-size: 3.5vh;
+	border-radius: 5vw;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	/* justify-items: center; */
+	
+}
+.box1_2 div{
+	
+	margin-top: 2vh;
+	width: 22vw;
+	height: 5vh;
+	border: 1px solid rgb(140, 0, 255);
+	margin-left: 10vw;
+	display: inline-block;
+	background-color: rgb(255, 255, 0);
+	font-size: 3.5vh;
+	text-align: center;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.733);
+	border-radius: 5vw;
+
+	
+}
+/* #one1{
+	background-color: burlywood;
+	font-size: 3vh;
+	text-align: center;
+} */
+
+/* score box */
+.cont3{
+	width: 85%;
+	height: 15vh;
+	/* border: 1px solid red; */
+	text-align: center;
+	align-self: center;
+	background-color: rgb(19, 18, 18);
+	padding-top: 2vh;
+	border-radius: 5vh;
+
+}
+#score{
+	font-size: 10vh;
+}
+
+.cont2 h2{
+	position: relative;
+	font-size: 4vh;
+	top: 8vh;
+	font-weight: 800;
+}
+
+
+/* computer inpute .box1 */
+
+#cInput{
+	width: 30vw;
+	height: 8vh;
+	/* border: 1px solid red; */
+	margin-left: 34vw;
+	margin-top: 10vh;
+	background-color: rgb(22, 21, 21);
+	color: white;
+	text-align: center;
+	font-size: 6.5vh;
+	border-radius: 5vh;
+
+
+}
+
+
+/* result page */
+
+.page3{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(5, 5, 5, 0.766);
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+	visibility:hidden;
+}
+.page3 h1{
+    color: white;
+	text-align: center;
+	margin-top: 35vh;
+	font-size: 10vh;
+}
+.page3 h2{
+    color: white;
+	text-align: center;
+	margin-top: 20vh;
+	/* margin-left: 20vw; */
+}
+.page3 h3{
+	color: white;
+	text-align: center;
+	margin-top: 5vh;
+}
+.page3 button{
+	width: 35vw;
+	height: 6vh;
+	margin: 5vh 32vw;
+	background-color: rgba(0, 0, 0, 0.685);
+	color: white;
+	border-radius: 2vh;
+
+
+}
+
+
+/* all cricket events */
+#fourImage{
+	position: absolute;
+	align-items: center;
+	width: 60vw;
+	bottom: -30vh;
+	right: 20vw;
+	opacity: 0.8;
+	visibility: hidden;
+}
+
+
+#sixImage{
+	position: absolute;
+	align-items: center;
+	width: 60vw;
+	bottom: -30vh;
+	right: 20vw;
+	opacity: 0.8;
+	visibility: hidden;
+}
+#outImage{
+	position: absolute;
+	align-items: center;
+	width: 0vh;
+	bottom: 30vh;
+	right: 0vw;
+	opacity: 0.8;
+	visibility: visible;
+}

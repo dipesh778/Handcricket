@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hand_Cricket</title>
+	<link rel="stylesheet" href="./CSS/indexstyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+	<div class="page1">
+		<div class="hs"><h2>HS: <span id="highScore1"></span></h2></div>
+		<a style="position: absolute;" onclick="homePage()" ><span class="material-symbols-outlined">home</span></a>
+		<video autoplay muted loop id="myVideo" type="video/mp4">
+			<source src="./media/Chain.mp4" >
+		  </video>
+		<div class="cont1">
+			
+		</div>
+		<div class="cont2">
+			<h2>COMPUTER</h2>
+			<div id="cInput"></div>
+		</div>
+		<div class="cont3">
+			<span id="score">SCORE</span>
+			<img src="./media/out.png" alt="" id="outImage">
+
+		</div>
+		<div class="cont4">
+			<div class="box1">
+				<div class="box1_1">
+					<div id="one1" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=1>1
+
+
+					</div>
+					<div id="two2" onclick="scoreCalc(this.getAttribute('data-value'))" data-value="2">2</div>
+					<div id="three3" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=3>3</div>
+				</div>
+				<div class="box1_2">
+					<div id="four4" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=4>4<img src="./media/four.png" alt="" id="fourImage"></div>
+					<div id="six6" onclick="scoreCalc(this.getAttribute('data-value'))" data-value=6>6
+						<img src="./media/six.png" alt="" id="sixImage">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="page2" id="homepage">
+			<div id="imgbox"> 
+				<h1>Hand <br> Cricket</h1>
+				<button id="playBtn" onclick="gameStart()">Let's Play</button>
+			</div>
+
+		</div>
+
+		<div class="page3" id="resultPage">
+			<h1>Out!</h1>
+			<h2>Your Score is : <span id="finalScore"></span></h2>
+			<h3>Highscore: <span id="highScore"></span></h3>
+			<button id="homeBtn" onclick="homePage()">Home</button>
+
+		</div>
+
+
+		<script src="./Javscript/javascript.js"></script>
+
+</body>
+
+</html>
