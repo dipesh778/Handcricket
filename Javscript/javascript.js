@@ -50,7 +50,7 @@ function scoreCalc(userHit) {
 
 		score = score + x;
 		
-		if(score>=50 && a===0){
+		if(score>=5 && a===0){
 			playAudio();
 			document.getElementById("fiftyImage").style.visibility = "visible";
 			popup50();
@@ -90,6 +90,7 @@ function homePage() {
 	// console.log(highScore);
 	// highscore = score;
 	score = 0;
+	a=0;
 	document.getElementById("resultPage").style.zIndex = "1";
 	document.getElementById("resultPage").style.visibility = "hidden";
 	document.getElementById("score").innerText = "Start";
@@ -172,7 +173,7 @@ function popup50() {
 	id = setInterval(move6, 8);
 	function move6() {
 		const event = document.getElementById("fiftyImage");
-		if (x == 90) {
+		if (x == 100) {
 			clearInterval(id);
 		}
 		else {
