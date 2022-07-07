@@ -110,7 +110,7 @@ function popupOut() {
 	let x = 0;
 	let y = -37;
 	clearInterval(id);
-	id = setInterval(frame, 8);
+	id = setInterval(frame, 10);
 	function frame() {
 		const event = document.getElementById("outImage");
 		if (x == 40) {
@@ -134,7 +134,7 @@ function popup4() {
 	let x = 0;
 
 	clearInterval(id);
-	id = setInterval(move4, 8);
+	id = setInterval(move4, 10);
 	function move4() {
 		const event = document.getElementById("fourImage");
 		if (x == 90) {
@@ -152,7 +152,7 @@ function popup6() {
 	let x = 0;
 
 	clearInterval(id);
-	id = setInterval(move6, 8);
+	id = setInterval(move6, 10);
 	function move6() {
 		const event = document.getElementById("sixImage");
 		if (x == 90) {
@@ -170,7 +170,7 @@ function popup50() {
 	let x = 0;
 
 	clearInterval(id);
-	id = setInterval(move6, 8);
+	id = setInterval(move6, 10);
 	function move6() {
 		const event = document.getElementById("fiftyImage");
 		if (x == 100) {
