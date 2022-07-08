@@ -2,6 +2,11 @@
 
 let score = 0;
 let a=0;
+let hS;
+highscore();
+// if(!localStorage.getItem('hS')){
+// 	localStorage.setItem('hS',0);
+// }
 
 
 
@@ -14,13 +19,17 @@ function scoreCalc(userHit) {
 		document.getElementById("outImage").style.visibility = "visible";
 		popupOut();
 		totalScore.push(score);
+		hS=Math.max(...totalScore);
+		localStorage.setItem('hS',hS);
+
+		
 
 		setTimeout(outDelay, 700);
 
 		function outDelay() {
 			// alert("yes");
-			document.getElementById("highScore").innerText = highscore();
-			document.getElementById("highScore1").innerText = highscore();
+			document.getElementById("highScore").innerText = hS;
+			document.getElementById("highScore1").innerText = hS;
 
 
 			document.getElementById("score").innerText = score;
@@ -93,7 +102,10 @@ function homePage() {
 	a=0;
 	document.getElementById("resultPage").style.zIndex = "1";
 	document.getElementById("resultPage").style.visibility = "hidden";
-	document.getElementById("score").innerText = "Start";
+	document.getElementById("imgbox").style.visibility = "visible";
+	document.getElementById("homepage").style.visibility = "visible";
+
+	document.getElementById("score").innerText = "Score";
 	document.getElementById("cInput").innerText = "";
 
 
@@ -188,9 +200,18 @@ function gameStart() {
 	document.getElementById("homepage").style.visibility = "hidden";
 
 }
-const totalScore = [0];
+
+let totalScore=[];
 function highscore() {
-	return Math.max(...totalScore);
+   if(!localStorage.getItem('hS')){
+	localStorage.setItem('hS',0);
+   }
+   let hS=localStorage.getItem('hS');
+
+    // hS=Math.max(...totalScore);
+	document.getElementById("highScore1").innerText =hS;
+    // localStorage.setItem('hS',hS);
+	// return hS;
 
 }
 
